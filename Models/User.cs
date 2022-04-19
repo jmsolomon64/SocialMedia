@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace SocialMedia.Models
 {
     public class User
@@ -11,7 +13,7 @@ namespace SocialMedia.Models
         [Required]
         public string Password { get; set;}
         [Required]
-        public date DateJoined { get; set;}
+        public DateTime DateJoined { get; set;}
         
     }
 }

@@ -15,7 +15,7 @@ namespace SocialMedia.Models
         [ForeignKey("Post")]
         public string Text { get; set; }
         [Required]
-        public int UserId { get; set; }        
         [ForeignKey("User")]
+        public int UserId { get; set; }        
     }
 }

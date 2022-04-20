@@ -9,11 +9,13 @@ namespace SocialMedia.Models
 {
     public class Comment
     {
-        [ForeignKey("Post")]
-        [ForeignKey("User")]
+        [Key]
         public int Id { get; set; }
         [Required]
+        [ForeignKey("Post")]
         public string Text { get; set; }
-        [Required]        
+        [Required]
+        public int UserId { get; set; }        
+        [ForeignKey("User")]
     }
 }

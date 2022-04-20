@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore; //needed to use DbContext
-using SocialMedia.Models;
+using SocialMedia.Models; //needed to access the classes in Models
 
 namespace SocialMediaAPI
 {

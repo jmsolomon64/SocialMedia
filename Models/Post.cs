@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SocialMediaAPI.Models
+namespace SocialMedia.Models
 {
     public class Post 
     {
@@ -15,8 +15,8 @@ namespace SocialMediaAPI.Models
         [MaxLength(281)]
         public DateTime DatePosted {get; set;}
         [Required]
-        public int Likes {get; set;}
+        public virtual List<Like> Likes {get; set;} //property is a list of likes
         [Required]
-        public int Comments {get; set;}
+        public virtual List<Reply> Reply {get; set;}  //property is a list of replies
     }
 }

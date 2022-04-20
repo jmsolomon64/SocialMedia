@@ -11,11 +11,16 @@ namespace SocialMedia.Models
     {
         [Key]
         public int Id { get; set; }
+
         [Required]
         [ForeignKey("Post")]
-        public string Text { get; set; }
+        public int PostId { get; set; }
+        
         [Required]
-        public int UserId { get; set; }        
+        public string Text { get; set; }
+
+        [Required]
         [ForeignKey("User")]
+        public int UserId { get; set; }        
     }
 }

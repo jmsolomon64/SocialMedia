@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;//needed to gain inheritance to the controller class
+using Microsoft.EntityFrameworkCore;
 using SocialMedia.Models;
 
-namespace SocialMediaAPI.Controllers
+namespace SocialMedia.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -30,7 +31,7 @@ namespace SocialMediaAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllUsers()
         {
-            var users = await _db.Users.ToListArray();
+            var users = await _db.Users.ToListAsync();
             return Ok(users);
         }
     }

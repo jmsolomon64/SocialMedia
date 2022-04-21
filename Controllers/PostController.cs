@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;//needed to gain inheritance to the controller cl
 using Microsoft.EntityFrameworkCore; //needed to use ToListAsync() method
 using SocialMedia.Data;
 using SocialMedia.Models; //needed to accessing classes in Models directory
+using SocialMediaAPI;
 
 namespace SocialMedia.Controllers
 {

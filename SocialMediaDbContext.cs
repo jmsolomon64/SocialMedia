@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore; //needed to use DbContext
 using SocialMedia.Data;
 using SocialMedia.Models; //needed to access the classes in Models
 
-namespace SocialMedia
+namespace SocialMediaAPI
 {
     public class SocialMediaDbContext : DbContext //Class inherits from DbContext class
     {

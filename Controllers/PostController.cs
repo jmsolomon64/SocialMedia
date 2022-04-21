@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Mvc;//needed to gain inheritance to the controller class
 using Microsoft.EntityFrameworkCore; //needed to use ToListAsync() method
+using SocialMedia.Data;
 using SocialMedia.Models; //needed to accessing classes in Models directory
 
-namespace SocialMediaAPI.Controllers
+namespace SocialMedia.Controllers
 {
     [ApiController] //gives dotnet heads up that this controller is an API controller not MVC
     [Route("[controller]")] //lets dotnet know what url access this controller

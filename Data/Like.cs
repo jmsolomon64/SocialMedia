@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SocialMedia.Models
+namespace SocialMedia.Data
 {
     public class Like
     {

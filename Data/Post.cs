@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations; //used for all notations, but foreign key
 using System.ComponentModel.DataAnnotations.Schema; //used to access foreign key notation
 
-namespace SocialMedia.Models 
+namespace SocialMedia.Data
 {
     public class Post 
     {

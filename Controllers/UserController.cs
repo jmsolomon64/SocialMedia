@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;//needed to gain inheritance to the controller class
 using Microsoft.EntityFrameworkCore;
+using SocialMedia.Data;
 using SocialMedia.Models;
 
 namespace SocialMedia.Controllers

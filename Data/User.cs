@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace SocialMedia.Models
+namespace SocialMedia.Data
 {
     public class User
     {
